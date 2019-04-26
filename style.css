@@ -1,97 +1,61 @@
 /* ---------- General Styles ---------- */
 
+
 body {
     /*background:url('img/amber-waves.jpg') 50% 0 no-repeat fixed;
     background-attachment: fixed;*/
-    background-color: #d3d3d3;
+    /*background-color: #d3d3d3;*/
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
-body, html {
-    height: 100%;
-    width: 100%;
-}
-
-#header {
-    display: flex;
-    z-index: 1;
-}
-
-h1 {
-    font-family:"Arvo";
-    font-weight:normal;
-    font-size: 35px;
-    text-align: center;
-    color: #fff;
-}
-
-/*.center { margin: 0 auto; }*/
-
-.hero-content {
-    background-color: #00d84d;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    text-align: left;
-    margin: 25px 100px;
-}
-
-.headers-collide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    padding: 8px;
-    margin: 18px;
-    border: 1px solid #fff;
-}
-
 .content {
     display: flex;
-    justify-content: space-between;
+      justify-content: space-between;
     margin: 0 auto;
     width: 960px;
 }
 
-/*.clear { clear: both; }*/
+
+/* ---------- Header + Footer ---------- */
+
 
 #header {
-    width: 100%;
-/*background: url('img/green-forest.jpg');*/
+    /*background: url('img/green-forest.jpg');*/
     background-color: #3c4856;
+    display: flex;
+    justify-content: space-between;
     height: 80px;
-    position: fixed;
     margin-top: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 #nav {
     display: flex;
-    justify-content: flex-end;
-    width: 60%;
+      justify-content: flex-end;
     margin-top: 20px;
+    width: 65%;
 }
 
 #logo a {
     color: #fff;
     display: flex;
-    text-decoration: none;
-    font-size: 30px;
-    margin-top: 20px;
-    color: #fff;
     font-family:"Wellfleet";
     font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+    text-decoration: none;
 }
 
 #nav ul{
-    list-style: none;
     display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    margin: 0 auto;
+      justify-content: center;
+      flex-flow: row wrap;
     list-style: none;
+    margin: 0 auto;
 }
 
 #nav li {
@@ -101,18 +65,22 @@ h1 {
 
 #nav li a {
     border: 1px solid #00f3ca;
+    border-radius: 10px;
     color: #fff; /*opacity:0.6;*/
-    font-size: 16px;
-    padding: 10px;
-    text-decoration: none;
     font-family: 'Wellfleet';
+    font-size: 14px;
+    padding: 15px;
+    text-decoration: none;
 }
 
 #nav li a.active {
     border: none;
-    color: #ff5051;
+    /*border-bottom: 2px solid #ff5051;*/
+    /*color: #ff5051;*/
+    color: yellow;
+    font-size: 16px;
     opacity:1;
-    border-bottom: 2px solid #ff5051;
+    /*text-transform: uppercase;*/
 }
 
 #nav li a:hover {
@@ -120,86 +88,7 @@ h1 {
     opacity:1;
 }
 
-.quotes {
-    font-family: 'Goudy Bookletter 1911', serif;
-    font-weight: normal;
-    font-size: 30px;
-    text-align: left;
-    margin: 50px auto;
-}
-
-.author_name_white { font-family:"Wellfleet"; margin: 70px 0 0 75px; color: #fff; font-size: 20px; }
-.author_name_gray { font-family:"Wellfleet"; margin: 70px 0 0 75px; color: #94a4a4; font-size: 20px; }
-
-.quotes_container {
-    width: 800px;
-    margin: 0 auto;
-    transform: skew(0deg,10deg);
-}
-
-.quotes_container_four {
-    width: 800px;
-    margin: 0 auto;
-    transform: skew(0deg,-10deg);
-}
-
-#green-forest { background: url('img/green-forest.jpg')no-repeat; width: 48px; height: 77px; margin: 0 auto; position: relative; bottom: -35px;}
-#divider { background: url('../img/divider.png')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto; }
-#ribbon { background: url('../img/ribbon.png')no-repeat; width: 251px; height: 48px; margin: 0 auto; display: block; position: relative; top: -38px; }
-#snowflakes1 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto; display: block; position: relative; bottom: -54px; left: -102px; }
-#snowflakes2 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto; display: block; position: relative; bottom: -33px; right: -100px; }
-
-#slide1, #slide2 {
-    width: 100%;
-}
-
-#slide1 {
-    background:url('img/green-forest.jpg') 50% 0 no-repeat fixed;
-    display: flex;
-    justify-content: flex-start;
-    color: #fff;
-    height: 200px;   /* 600 */
-    margin: 0;
-    padding: 200px 0 260px 0;
-    background-size: cover;
-}
-
-#slide2 {
-    transform: skew(0deg,-10deg) translateY(-120px);
-    background-color: #00f3ca;
-    /*background-color: #5d6063;*/
-    color: #333333;
-    height: 300px;    /* 300 */
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 200px 0;
-    z-index: 0;
-}
-
-#slide3 {
-    background: url('img/earth.jpg') 50% 0 no-repeat fixed;
-    color: #fff;
-    height: 600px;  /* 600 */
-    padding: 170px 0 0 0;
-    background-size: cover;
-}
-
-#slide4 {
-    transform: skew(0deg,10deg) translateY(-120px);
-    background-color: #00f3ca;
-    color: #333333;
-    height: 300px;  /* 300 */
-    padding: 200px 0;
-}
-
-#slide5 {
-    background: url('img/amber-waves.jpg') 50% 0 no-repeat fixed;
-    height: 80px;
-    margin: 0 auto;
-    padding: 250px 0;
-    color: #fff;
-    background-size: cover;
-}
+/* copy */
 
 #copyright {
     color: #fff;
@@ -215,3 +104,155 @@ h1 {
     color: #fff;
     opacity: 5;
 }
+
+
+/* ---------- Main ---------- */
+
+
+main {
+    background:url('img/amber-waves.jpg') 50% 0 no-repeat fixed;
+    background-attachment: fixed;
+    background-position: center;
+    /*background-color: #d3d3d3;*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#slide1, #slide2 {
+    width: 100%;
+}
+
+#slide1 {
+    background:url('img/green-forest.jpg') 50% 0 no-repeat fixed;
+    background-color: #d3d3d3;
+    background-size: cover;
+      display: flex;
+      justify-content: center;
+    color: #fff;
+    height: 150px;   /* 600 */
+    margin: 0;
+    padding: 200px 0 260px 0;
+
+}
+
+#slide2 {
+    background-color: #00f3ca;
+    /*background-color: #5d6063;*/
+    color: #333333;
+    height: 300px;    /* 300 */
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 250px 0;
+    /*transform: skew(0deg,-5deg) translateY(-120px);*/
+    z-index: 0;
+}
+
+#slide3 {
+    background: url('img/green-forest.jpg') 50% 0 no-repeat fixed;
+    background-size: cover;*/
+    color: #fff;
+    height: 600px;  /* 600 */
+    padding: 170px 0 0 0;
+}
+
+#slide3::after {
+    background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#slide4 {
+    background-color: #00f3ca;
+    color: #333333;
+    height: 300px;  /* 300 */
+    padding: 200px 0;
+    /*transform: skew(0deg,5deg) translateY(-120px);*/
+}
+
+#slide5 {
+    background: url('img/earth.jpg') 50% 0 no-repeat fixed;
+    background-size: cover;
+    color: #fff;
+    /*height: 80px;*/
+    margin: 0 auto;
+    margin-top: /*skew(0deg,10deg)*/ translateY(-120px);
+    padding: 250px 0;
+}
+
+/*
+.hero-content {
+    background-color: #00d84d;
+    border: 5px solid #00f3ca;
+    border-radius: 3px;
+    display: flex;
+      justify-content: center;
+      flex-flow: row wrap;
+    margin: 25px 100px;
+    text-align: left;
+}
+*/
+
+.headers-collide {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+    margin: 0 auto;
+    opacity: 2;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-family:"Arvo";
+    font-weight:normal;
+    font-size: 35px;
+    padding: 40px;
+    text-align: center;
+}
+
+
+/*
+.quotes {
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: left;
+    margin: 50px auto;
+}
+
+.author_name_white { font-family:"Wellfleet"; margin: 70px 0 0 75px; color: #fff; font-size: 20px; }
+.author_name_gray { font-family:"Wellfleet"; margin: 70px 0 0 75px; color: #94a4a4; font-size: 20px; }
+*/
+
+.quotes_container {
+    width: 800px;
+    margin: 0 auto;
+    /*transform: skew(0deg,5deg);*/
+}
+
+.quotes_container_four {
+    width: 800px;
+    margin: 0 auto;
+    /*transform: skew(0deg,-5deg);*/
+}
+
+/*
+#green-forest { background: url('img/green-forest.jpg')no-repeat; width: 48px; height: 77px; margin: 0 auto; position: relative; bottom: -35px;}
+#divider { background: url('../img/divider.png')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto; }
+#ribbon { background: url('../img/ribbon.png')no-repeat; width: 251px; height: 48px; margin: 0 auto; display: block; position: relative; top: -38px; }
+#snowflakes1 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto; display: block; position: relative; bottom: -54px; left: -102px; }
+#snowflakes2 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto; display: block; position: relative; bottom: -33px; right: -100px; }
+*/
