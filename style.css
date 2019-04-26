@@ -137,6 +137,12 @@ h1 {
     transform: skew(0deg,10deg);
 }
 
+.quotes_container_four {
+    width: 800px;
+    margin: 0 auto;
+    transform: skew(0deg,-10deg);
+}
+
 #green-forest { background: url('img/green-forest.jpg')no-repeat; width: 48px; height: 77px; margin: 0 auto; position: relative; bottom: -35px;}
 #divider { background: url('../img/divider.png')no-repeat; width: 300px; height: 35px; margin: 0px auto 27px auto; }
 #ribbon { background: url('../img/ribbon.png')no-repeat; width: 251px; height: 48px; margin: 0 auto; display: block; position: relative; top: -38px; }
@@ -188,7 +194,7 @@ h1 {
 
 #slide5 {
     background: url('img/amber-waves.jpg') 50% 0 no-repeat fixed;
-    height: 200px;
+    height: 80px;
     margin: 0 auto;
     padding: 250px 0;
     color: #fff;
