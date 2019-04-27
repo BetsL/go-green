@@ -30,7 +30,7 @@ body {
     margin-top: 30px;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 #nav {
@@ -41,7 +41,8 @@ body {
 }
 
 #logo a {
-    color: #fff;
+    /*color: #00f3ca;*/
+    color: rgba(0,150,105,0.8);
     display: flex;
     font-family:"Wellfleet";
     font-weight: bold;
@@ -74,11 +75,11 @@ body {
 }
 
 #nav li a.active {
-    border: none;
+    border: 1px solid yellow;
     /*border-bottom: 2px solid #ff5051;*/
     /*color: #ff5051;*/
     color: yellow;
-    font-size: 16px;
+    font-size: 14px;
     opacity:1;
     /*text-transform: uppercase;*/
 }
@@ -119,6 +120,11 @@ main {
     width: 100%;
 }
 
+aside {
+    border: 50px solid #00f3ca;
+    opacity: 0.9;
+}
+
 #slide1, #slide2 {
     width: 100%;
 }
@@ -132,28 +138,37 @@ main {
     color: #fff;
     height: 150px;   /* 600 */
     margin: 0;
+    overflow: hidden;
     padding: 200px 0 260px 0;
+    z-index: 1;
 
 }
 
 #slide2 {
-    background-color: #00f3ca;
+    background-color: rgba(0,243,202,0.9);
     /*background-color: #5d6063;*/
     color: #333333;
+    display: inline-block;
+    /*float: left;*/
     height: 300px;    /* 300 */
     margin: 0 auto;
-    overflow: hidden;
-    padding: 250px 0;
+    /*overflow: hidden;*/
+    padding: 200px 0;
     /*transform: skew(0deg,-5deg) translateY(-120px);*/
-    z-index: 0;
+    width: 50%;
+    /*z-index: 0;*/
 }
 
 #slide3 {
-    background: url('img/green-forest.jpg') 50% 0 no-repeat fixed;
-    background-size: cover;*/
+    /*background: url('img/green-forest.jpg') 50% 0 no-repeat fixed;*/
+    /*background-size: cover;*/
+    background-color: rgba(0,243,202,0.9);
     color: #fff;
-    height: 600px;  /* 600 */
-    padding: 170px 0 0 0;
+    display: inline-block;
+    height: 300px;  /* 600 */
+    margin-left: 555px;
+    padding: 200px 0;
+    width: 50%;
 }
 
 #slide3::after {
@@ -168,11 +183,20 @@ main {
 }
 
 #slide4 {
-    background-color: #00f3ca;
+    background-color: rgba(0,243,202,0.9);
+    /*background-color: #5d6063;*/
+    border-right: 5px solid #00f3ca;
+    border-bottom: 5px solid #00f3ca;
     color: #333333;
-    height: 300px;  /* 300 */
+    display: inline-block;
+    /*float: left;*/
+    height: 300px;    /* 300 */
+    margin: 0 auto;
+    /*overflow: hidden;*/
     padding: 200px 0;
-    /*transform: skew(0deg,5deg) translateY(-120px);*/
+    /*transform: skew(0deg,-5deg) translateY(-120px);*/
+    width: 50%;
+    /*z-index: 0;*/
 }
 
 #slide5 {
@@ -199,7 +223,7 @@ main {
 */
 
 .headers-collide {
-    border: 2px solid #fff;
+    border: 12px solid #fff;
     border-radius: 20px;
     color: #fff;
     display: flex;
@@ -210,6 +234,7 @@ main {
     opacity: 2;
     padding: 40px;
     text-align: center;
+    /*z-index: 100;*/
 }
 
 h1 {
@@ -221,6 +246,7 @@ h1 {
     font-size: 35px;
     padding: 40px;
     text-align: center;
+    z-index: 1;
 }
 
 

@@ -4,7 +4,6 @@
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <title>Go Green, SPES!</title>
  <link rel="stylesheet" href="style.css"/>
- <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
  <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
 
  <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
@@ -12,31 +11,6 @@
  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
  <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
  <script>
-
-    /* jQ for sliding nav */
-    $(document).ready(function() {
-      $('a[href*=#]').each(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-        && location.hostname == this.hostname
-        && this.hash.replace(/#/,'') ) {
-          var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-          var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-           if ($target) {
-             var targetOffset = $target.offset().top;
-
-    /* jQ for toggle .active + scroll #div */
-             $(this).click(function() {
-                $("#nav li a").removeClass("active");
-                $(this).addClass('active');
-               $('html, body').animate({scrollTop: targetOffset}, 500);
-               return false;
-             });
-          }
-        }
-      });
-
-    });
-
  </script>
 </head>
 
@@ -69,39 +43,39 @@
         </div>
     </div>
 
-    <div id="slide2">
-        <div class="content" >
-            <div class="quotes_container">
-                <h3 class="quotes">Super. Awesome. Content.</h3>
-                <img src="img/dr-seuss.png" align="left"/> <h4 class="author_name_gray">???</h4>
-            </div>
-        </div>
-    </div>
+    <aside>
 
-    <div id="slide3">
-        <div class="content">
-            <div class="quotes_container">
-                <h3 class="quotes">Awesome. Content.</h3>
-                <img src="img/norman.png" align="left"/> <h4 class="author_name_white">??</h4>
+        <div id="slide2">
+            <div class="content" >
+                <div class="quotes_container">
+                    <h3 class="quotes">Super. Awesome. Content.</h3>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="slide4">
-        <div class="content">
-            <div class="quotes_container_four">
-                <div class="window"></div>
-                <h3 class="quotes">Content.</h3>
-                <img src="img/dr-seuss.png" align="left"/> <h4 class="author_name_gray">?</h4>
+        <div id="slide3">
+            <div class="content">
+                <div class="quotes_container">
+                    <h3 class="quotes">Awesome. Content.</h3>
+                </div>
             </div>
         </div>
-    </div>
+
+        <div id="slide4">
+            <div class="content">
+                <div class="quotes_container_four">
+                    <div class="window"></div>
+                    <h3 class="quotes">Content.</h3>
+                </div>
+            </div>
+        </div>
+
+    </aside>
 
     <div id="slide5">
         <div class="content">
             <div class="quotes_container">
-                <h3 class="quotes">Please recyle. Thanks.</h3>
-                <img src="img/bob.png" align="left"/> <h4 class="author_name_white">Earth</h4>
+                <h3 class="quotes">Please recycle. Thanks.</h3>
             </div>
             <div id="copyright"><a href="">Elizabeth Harkins 2019</a></div>
         </div>
