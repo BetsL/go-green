@@ -236,7 +236,7 @@ aside {
     opacity: 2;
     padding: 40px;
     text-align: center;
-    /*z-index: 100;*/
+    /*z-index: 1;*/
 }
 
 h1 {
